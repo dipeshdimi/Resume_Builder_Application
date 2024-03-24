@@ -42,10 +42,9 @@ export default function Output({basic, edu, exp}) {
                 <h2>Education</h2>
                 {edu.map(degInfo => 
                     <div className='Edu' key = {degInfo.uniqueId}>
-                        <b><u>{degInfo.college}</u> <span style={{float: 'right'}}>[{degInfo.start} to {degInfo.end}]</span></b>
+                        <b><u>{degInfo.college}</u> <span style={{float: 'right'}}><em>{degInfo.start} to {degInfo.end}</em></span></b>
                         <p>{degInfo.degree} - Major in {degInfo.major}</p>
                         <p>Cumulative Performance Index (CPI): {degInfo.score}/10</p>
-                        {/* <p>Relevant Coursework: </p> */}
                     </div>
                 )}
             </section>
@@ -55,7 +54,7 @@ export default function Output({basic, edu, exp}) {
                 {exp.map(employmentInfo => (
                     <div className='Exp' key={employmentInfo.uniqueId}>
                         <div className='when'>
-                            <i>{employmentInfo.start} to {employmentInfo.end}</i>
+                            {employmentInfo.start} to {employmentInfo.end}
                             <p>{employmentInfo.location}</p>
                         </div>
                         <div className='what'>
