@@ -2,9 +2,9 @@
     width: 60%;
     border: 2px solid white;
     background-color: rgb(215, 231, 244);
-    font-family: Verdana, Geneva, Tahoma, sans-serif Helvetica, sans-serif;
+    font-family: sans-serif;
 
-    header {
+    .contact {
         padding: 10px;
         background-color: #242424;
         color: white;
@@ -23,6 +23,8 @@
             margin-bottom: 3px;
 
             div {
+                display: flex;
+                align-items: center;
                 gap: 5px;
             }
         }

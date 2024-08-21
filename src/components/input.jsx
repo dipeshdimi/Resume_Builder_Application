@@ -57,12 +57,12 @@ export default function Input({editBasic, edu, editEdu, exp, editExp}) {
                 <h2>Basic Information</h2>
                 
                 <form onSubmit={handleSubmitBasic}>
-                    <input type='text' placeholder='Name' required/>
-                    <input type='email' placeholder='Email' required/>
-                    <input type='number' placeholder='Phone' required/>
-                    <input type='text' placeholder='City' required/>
-                    <input type='text' placeholder='LinkedIn Username'/>
-                    <input type='text' placeholder='Github Username'/>
+                    <input name='name' type='text' placeholder='Name' required autoComplete="gyvu"/>
+                    <input name='email' type='email' placeholder='Email' required/>
+                    <input name='phone' type='number' placeholder='Phone' required/>
+                    <input name='city' type='text' placeholder='City' required/>
+                    <input name='linkedin' type='text' placeholder='LinkedIn Username'/>
+                    <input name='github' type='text' placeholder='Github Username'/>
 
                     <button>Submit</button>
                 </form>
@@ -71,12 +71,12 @@ export default function Input({editBasic, edu, editEdu, exp, editExp}) {
             <div>
                 <h2>Education</h2>
                 <form onSubmit={handleSubmitEdu}>
-                    <input type='text' placeholder='College' required/>
-                    <input type='text' placeholder='Degree' required/>
-                    <input type='text' placeholder='Major' required/>
-                    <input type='date' placeholder='Start Date' required/>
-                    <input type='date' placeholder='End Date' required/>
-                    <input type='number' placeholder='Score' step='0.01' required/>
+                    <input name='college' type='text' placeholder='College' required/>
+                    <input name='degree' type='text' placeholder='Degree' required/>
+                    <input name='major' type='text' placeholder='Major' required/>
+                    <input name='eduStart' type='date' placeholder='Start Date' required/>
+                    <input name='eduEnd' type='date' placeholder='End Date' required/>
+                    <input name='score' type='number' placeholder='Score' step='0.01' required/>
 
                     <button>Submit</button>
                 </form>
@@ -85,12 +85,12 @@ export default function Input({editBasic, edu, editEdu, exp, editExp}) {
             <div>
                 <h2>Professional Experience</h2>
                 <form onSubmit={handleSubmitExp}>
-                    <input type='text' placeholder='Company' required/>
-                    <input type='text' placeholder='Position' required/>
-                    <input type='month' placeholder='Start Date' required/>
-                    <input type='month' placeholder='End Date' required/>
-                    <input type='text' placeholder='Location' required/>
-                    <input type='text' placeholder='Responsibilities' required/>
+                    <input name='company' type='text' placeholder='Company' required/>
+                    <input name='position' type='text' placeholder='Position' required/>
+                    <input name='expStart' type='month' placeholder='Start Date' required/>
+                    <input name='expEnd' type='month' placeholder='End Date' required/>
+                    <input name='location' type='text' placeholder='Location' required/>
+                    <input name='responsibilities' type='text' placeholder='Responsibilities' required/>
 
                     <button>Submit</button>
                 </form>

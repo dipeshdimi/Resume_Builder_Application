@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 
 export default function Output({basic, edu, exp}) {
     return (
-        <div className="output">
-            <header>
+        <div className="output" id="output">
+            <header className='contact'>
                 <p>{basic.name}</p>
 
                 <div>
